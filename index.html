@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+    <main>     
+        <section class="input-section">
+            <div class="input-container">
+                <h2 id="input-header">Tambahkan Buku Baru</h2>
+                <form id="input-book">
+                    <div class="input">
+                    <label for="input-title">Judul</label>
+                    <input id="input-title" type="text" required>
+                    </div>
+                    <div class="input">
+                    <label for="input-author">Penulis</label>
+                    <input id="input-author" type="text" required>
+                    </div>
+                    <div class="input">
+                    <label for="input-year">Tahun</label>
+                    <input id="input-year" type="number" required>
+                    </div>
+                    <div class="input-checkbox">
+                    <label for="input-is-complete">Apakah buku ini sudah selesai dibaca?</label>
+                    <input id="input-is-complete" type="checkbox">
+                    </div>
+                    <button id="book-submit" type="submit">Tambahkan</button>
+                </form>
+            </div>   
+        </section>
+        <section class="search-section">
+            <div class="search-container">
+                <h2>Cari Buku</h2>
+                <form id="search-book">
+                  <label for="search-title">Judul</label>
+                  <input id="search-title" type="text">
+                  <button id="search-submit" type="submit">Cari</button>
+                </form>
+                <div id="search-result" class="book-item" style="width: 100%"></div>
+            </div>
+        </section>    
+        <div class="bookshelf">
+            <section class="bookshelf-section">
+                <div class="bookshelf-container">
+                    <h2>Belum Selesai</h2> 
+                    <div id="uncomplete-list" class="book-list">
+                
+                    </div>
+                </div>
+            </section>
+            <section class="bookshelf-section">
+                <div class="bookshelf-container">
+                    <h2>Selesai</h2> 
+                    <div id="complete-list" class="book-list">
+                   
+                    </div>
+                </div>
+            </section>
+        </div>    
+    </main>
+    <footer>
+        <p>&copy; 2023 Ryan Fathurrahman</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
