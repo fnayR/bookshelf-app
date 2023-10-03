@@ -1,2 +1,2 @@
 # bookshelf-app
-Submission for [Dicoding(https://dicoding.com/)]
+Submission for [Dicoding](https://dicoding.com/)
